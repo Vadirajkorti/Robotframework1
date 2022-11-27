@@ -8,7 +8,7 @@ trigger:
 
 
 pool:
-  vmImage: 'vs2017-win2016'
+  vmImage: 'vs2022-win2016'
 strategy:
   matrix:
     Python37:
@@ -25,8 +25,7 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    pip install robptframework robotframework-seleniumlibrary && npm install chromedriver -azurepipelines
-    robotframework
+    pip install robptframework robotframework-seleniumlibrary && npm install chromedriver 
   displayName: 'Install Dependencies'
 
 - powershell: robot --pythonpath . -x outputxunit.xml TestCases.robot.

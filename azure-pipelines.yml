@@ -8,7 +8,7 @@ trigger:
 
 
 pool:
-  vmImage: 'windows-2019'
+  vmImage: 'VS2022-Win2019'
 strategy:
   matrix:
     Python37:

@@ -20,11 +20,11 @@ ${browser_name}          Chrome
 *** Keywords ***
 
 open the browser with the Mortgage payment url
-    Create Webdriver    Chrome  executable_path=C:/VAD/driver/chromedriver
+    Create Webdriver    ${browser_name}       executable_path=resources/chromedriver
     Go To   ${url}
 
 open the browser with the url
-    Create Webdriver    ${browser_name}  executable_path=resources/${browser_name}
+    Create Webdriver    ${browser_name}      executable_path=resources/chromedriver
     Go To   ${url}
 
 Close Browser session

@@ -29,7 +29,7 @@ Validate UnSuccesful Login
 
 
 End to end ecommerce Product validation
-    [Tags]      REGRESSION
+    [Tags]
     LandingPage.Fill the login Form     ${user_name}    ${valid_password}
     ShopPage.wait until Element is located in the page
     ShopPage.Verify Card titles in the Shop page
